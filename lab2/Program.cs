@@ -103,8 +103,10 @@ namespace labwork
                         break;
 
                 case 10:
-                        Employee employee = new Employee(1200, 1300, 450, 12000);
-                        employee.basic_sal();
+                        SalaryCal salaryCal = new SalaryCal();
+                         salaryCal.basic_sal();
+                         salaryCal.Disp_sal();
+                         salaryCal.Gross_sal();
                         break;
 
 
