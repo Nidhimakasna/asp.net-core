@@ -7,7 +7,7 @@ namespace lab4
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("enter a program number:\n1]Areas\n2].Addition\n3].BankRBI\n4].Hospital\n5].FindArea\n6].BankAccount");
+            Console.WriteLine("enter a program number:\n1]Areas\n2].Addition\n3].BankRBI\n4].Hospital\n5].FindArea\n");
             int n = Convert.ToInt32(Console.ReadLine());
             switch (n)
             {
@@ -90,25 +90,8 @@ namespace lab4
                     Console.WriteLine("area of rectangle:" + reacarea1);
                     Console.WriteLine("area of circle:" + circlearea);
                     break;
-                case 6:
-                    
-            
-                    BankAccount account = new BankAccount(5000, "Nidhi Patel");
-
-                    account.ShowDetails();
-
-                    account.Deposit(1000);
-
-                    account.Deposit("CHK12345", 2000);
-
-                    account.Withdraw(1500);
-
-                    account.Withdraw("CHK54321", 3000);
-
-                    account.Withdraw(10000);
-
-                    account.ShowDetails();
-                    break;
+               
+                
             }
         }
 
