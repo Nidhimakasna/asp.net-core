@@ -7,7 +7,7 @@ namespace lab4
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("enter a program number:\n1]Areas\n2].Addition\n3].BankRBI\n4].Hospital\n5].FindArea\n");
+            Console.WriteLine("enter a program number:\n1]Areas\n2].Addition\n3].BankRBI\n4].Hospital\n5].FindArea6]BankAccount\n");
             int n = Convert.ToInt32(Console.ReadLine());
             switch (n)
             {
