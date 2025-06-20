@@ -40,14 +40,10 @@ namespace lab4
                     Console.WriteLine("Addition of float number:" + add2);
                     break;
                  case 3:
-
                     Console.WriteLine("Enter principal : ");
                     double principal = Convert.ToDouble(Console.ReadLine());
-
                     Console.WriteLine("Enter rate : ");
                     double rate = Convert.ToDouble(Console.ReadLine());
-
-
                     RBI bank;
                     bank = new RBI();
                     bank.CalculateInterest(principal, rate);
@@ -90,12 +86,41 @@ namespace lab4
                     Console.WriteLine("area of rectangle:" + reacarea1);
                     Console.WriteLine("area of circle:" + circlearea);
                     break;
-               
+                 case 6:
+                    Console.Write("Enter account holder name: ");
+                    string name = Console.ReadLine();
+                
+                    Console.Write("Enter initial balance: ");
+                    double iBalance = Convert.ToDouble(Console.ReadLine());
+                
+                    BankAccount acc = new BankAccount(name, iBalance);
+                
+                    Console.Write("Enter deposit (cash): ");
+                    double cashDeposit = Convert.ToDouble(Console.ReadLine());
+                    acc.Deposit(cashDeposit);
+                
+                    Console.Write("Enter check number to deposit: ");
+                    string checkNum = Console.ReadLine();
+                
+                    Console.Write("Enter amount to deposit by check: ");
+                    double checkDeposit = Convert.ToDouble(Console.ReadLine());
+                    acc.Deposit(checkNum, checkDeposit);
+                
+                    Console.Write("Enter amount to withdraw (cash): ");
+                    double w1 = Convert.ToDouble(Console.ReadLine());
+                    acc.Withdraw(w1);
+                
+                    Console.Write("Enter check number to withdraw: ");
+                    string withdrawCheckNum = Console.ReadLine();
+                
+                    Console.Write("Enter amount to withdraw by check: ");
+                    double w2 = Convert.ToDouble(Console.ReadLine());
+                    acc.Withdraw(withdrawCheckNum, w2);
+                    acc.ShowBalance();
+                    break;   
                 
             }
         }
-
-
     }
 }
  
