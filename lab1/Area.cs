@@ -8,4 +8,4 @@ int w = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("area of rectangle:" + l * w);
 Console.WriteLine("enter a radius");
 int r = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("area of circle:" + 2 * 3.14 * r);
+Console.WriteLine("area of circle:" +  3.14* r * r);
