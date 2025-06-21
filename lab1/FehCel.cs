@@ -15,7 +15,7 @@ class FerCel
 
         double fahrenheit = CelsiusToFahrenheit(celsius);
 
-        Console.WriteLine("Temperature in Fahrenheit = " + fahrenheit);
+        Console.WriteLine("Fahrenheit = " + fahrenheit);
     }
 }
 
@@ -31,11 +31,11 @@ class FerCel
     static void Main()
     {
         Console.Write("Enter temperature in Fahrenheit: ");
-        double fahrenheit = double.Parse(Console.ReadLine());
+        double fahrenheit = Convert.ToDouble(Console.ReadLine());
 
         double celsius = FahrenheitToCelsius(fahrenheit);
 
-        Console.WriteLine("Temperature in Celsius = " + celsius);
+        Console.WriteLine("Celsius = " + celsius);
     }
 }
 
