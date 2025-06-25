@@ -6,7 +6,7 @@
 //d. Clear() - To clear all the student from the list
 
 
-//https://github.com/sejalgupta001/Theme_DotNet/tree/main
+
 using System;
 using System.Collections;
 
