@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order/Delivery Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #d3e5ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .form {
+      max-width: 650px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      margin: 50px auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .header {
+      background-color: #2f80ed;
+      color: white;
+      text-align: center;
+      padding: 20px 20px 20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .form-header ion-icon {
+      font-size: 64px;
+      background: white;
+      color: #2f80ed;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .header h2 {
+      font-size: 28px;
+      margin: 0;
+    }
+    .header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+    .form-section {
+      font-weight: bold;
+      color: #2f80ed;
+      border-bottom: 2px solid #2f80ed;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+    label {
+      font-weight: 500;
+      color: #2f80ed;
+    }
+    .form-text {
+      font-size: 0.8rem;
+      color: gray;
+    }
+    .submit-btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="form">
+    <div class="header">
+      <ion-icon name="location-sharp" style="height: 90px; width: 400px;"></ion-icon>
+      
+    </div>
+    <div style="text-align: center;">
+        <h5 class="text-primary" style="font-size: 40px;">Order/delivery Tracking</h5>
+
+      <p class="text-primary">Trace your order</p>
+      </div>
+
+    <form class="p-4">
+      <div class="form-section">Personal Information</div>
+      
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Name <span class="text-danger">*</span></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Email <span class="text-danger">*</span></label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Contact number <span class="text-danger">*</span></label>
+        <div class="col-sm-9">
+          <input type="tel" class="form-control" required>
+          <div class="form-text text-primary" >As per your order.</div>
+        </div>
+      </div>
+
+      <div class="form-section">Order Information</div>
+
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Order ID <span class="text-danger">*</span></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Delivery destination <span class="text-danger">*</span></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control mb-2">
+          <div class="text-primary">Street Address</div>
+          <input type="text" class="form-control mb-2">
+          <div class="text-primary">Address Line 2</div>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <input type="text" class="form-control" >
+              <div class="text-primary">City</div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <input type="text" class="form-control" >
+              <div class="text-primary">State/Region/Province</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <input type="text" class="form-control" >
+              <div class="text-primary">Postal / Zip Code</div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <select class="form-select" required>
+                <option selected disabled>Select </option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>UK</option>
+                <option>India</option>
+              </select>
+              <div class="text-primary">Country</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <label class="col-sm-3 col-form-label">When did you place your order? <span class="text-danger">*</span></label>
+        <div class="col-sm-4">
+          <input type="date" class="form-control" >
+        </div>
+      </div>
+
+      <div class="submit-btn">
+        <button type="submit" class="btn btn-primary px-4">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
